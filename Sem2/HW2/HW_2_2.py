@@ -3,22 +3,13 @@
 # Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
 
 
-# s = int(input('Введите сумму чисел: '))
-# р = int(input('Введите произведение чисел: '))
+s = int(input('Введите сумму чисел: '))
+p = int(input('Введите произведение чисел: '))
+x = 1
 
-# x = (s + (s**2 - 4*p)**0,5)/2
-# y = s - x
-
-# print(x, y)
-
-
-s = int(input())
-p = int(input())
-num_1 = 1
-
-while num_1 < p:
-    num_2 = s - num_1
-    if s == num_1 + num_2 and p == num_2 * num_1:
-        print(num_1, num_2)
+while x < p:
+    y = s - x
+    if s == x + y and p == y * x:
+        print(f"x = {x}, y = {y}")
         break
-    num_1 += 1
+    x += 1
