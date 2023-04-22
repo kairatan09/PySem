@@ -16,7 +16,6 @@ blueberry = [random.randint(1, 20) for i in range(int(input('Введите ко
 print(f"Урожайность каждого куста - {blueberry}")
 
 harvest = list()
-for i in range(len(blueberry) - 1):
+for i in range(-1, len(blueberry) - 1):
     harvest.append(blueberry[i - 1] + blueberry[i] + blueberry[i + 1])
-harvest.append(blueberry[-2] + blueberry[-1] + blueberry[0])
 print(f"Максимальный урожай с трех последовательных кустов - {max(harvest)}")
