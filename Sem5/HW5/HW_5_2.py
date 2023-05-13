@@ -12,4 +12,4 @@ def sum(a, b):
 
 a = (int(input('Введите число a: ')))
 b = (int(input('Введите число b: ')))
-print('Сумма a и b равна: ', sum(a, b)) 
+print(f'Сумма {a} и {b} равна: ', sum(a, b)) 
